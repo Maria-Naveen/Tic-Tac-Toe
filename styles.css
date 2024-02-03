@@ -10,30 +10,43 @@ body{
 	width: 100%;
 	text-align: center;
 	font-family: 'Salsa', cursive;
+	background-color: antiquewhite;
 }
 
 hr{
-	width: 500px;
+	max-width: 200px;
 	border: 2px solid black;
 	margin: 0 auto;
 	margin-bottom: 10px;
+}
+
+#turn{
+	max-width: 15rem;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: burlywood;
+	border: 1px solid black;
+	border-radius: 50px 10px 50px 10px;
 }
 
 .container{
 	width: 450px;
 	height: 450px;
 	display: grid;
-	grid-template-rows: 33% 33% 33%;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: repeat(3,minmax(8em,10rem));
+	grid-template-columns: repeat(3,minmax(8em,10rem));
 	margin: 0 auto;
 	padding: 3px;
+	
 }
+
 .tile{
-	width: 147px;
+	max-width: 147px;
 	height: 147px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	font-size: 2em;
 	border-right: 3px solid black;
 	border-bottom: 3px solid black;
@@ -46,7 +59,7 @@ hr{
 }
 
 #restart{
-	width: 10%;
+	min-width: 10em;
 	height: 10%;
 	font-size: 1.5em;
 	font-family: 'Salsa', cursive;
